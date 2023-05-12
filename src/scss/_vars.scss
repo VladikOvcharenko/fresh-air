@@ -2,7 +2,8 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+  --font-family: 'Proxima', sans-serif;
+  --font-title: 'Ruberoid', sans-serif;
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -11,6 +12,7 @@
   --accent-color: #495e4c;
   --second-color: #78c081;
   --blue-romance: #d9fadd;
+  --hover-color: #54e165;
 
   --light-color: #fff;
 }

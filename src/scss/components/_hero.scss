@@ -1,0 +1,68 @@
+.hero {
+  padding-top: 167px;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 820px;
+  background-image: url('../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  background-color: #784040;
+
+  &__content {
+    grid-column: 6 span;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 64px;
+    line-height: 74px;
+    &--color {
+      color: var(--second-color);
+      text-transform: uppercase;
+    }
+    &--line {
+      padding-left: 210px;
+      background-position: left center;
+      background-size: 176px 5px;
+      background-repeat: no-repeat;
+      background-image: url('../img/line.svg');
+    }
+  }
+
+  &__descr {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 32px;
+    color: #7ca381;
+
+    padding-left: 62px;
+    background-position: left 9px;
+    background-size: 50px 12px;
+    background-repeat: no-repeat;
+    background-image: url('../img/dots.svg');
+  }
+
+  &__contacts {
+    margin-top: 52px;
+  }
+  &__info {
+    color: #7b897d;
+
+    padding-left: 50px;
+    background-position: left center;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+
+    &--adress {
+      background-image: url('../img/map-icon.svg');
+    }
+    &--telephons {
+      margin-left: 50px;
+      background-image: url('../img/phone-icon.svg');
+    }
+  }
+  &__btn {
+    margin-top: 78px;
+  }
+}

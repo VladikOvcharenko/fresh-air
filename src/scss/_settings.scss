@@ -1,6 +1,11 @@
 html {
   box-sizing: border-box;
 }
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
 
 *,
 *::before,
@@ -10,7 +15,11 @@ html {
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -19,6 +28,14 @@ html {
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--accent-color);
+  font-family: var(--font-title);
 }
 
 img {
@@ -104,4 +121,13 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
 }

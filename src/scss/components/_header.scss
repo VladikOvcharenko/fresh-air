@@ -1,0 +1,41 @@
+.header {
+  &__container {
+    margin: 26px auto 0;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+  }
+  &--position {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+.nav {
+  margin-right: 140px;
+  align-items: center;
+
+  &__list {
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__link {
+    color: var(--accent-color);
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: lowercase;
+    transition: all 0.3s ease-in-out;
+    @include hover {
+      color: var(--hover-color);
+    }
+  }
+}
+
+.nav__link.focus-visible {
+  outline: 1px solid var(--hover-color);
+  outline-offset: 6px;
+  border-radius: 8px;
+}
