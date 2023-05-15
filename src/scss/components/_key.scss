@@ -1,0 +1,86 @@
+.key {
+  margin-top: 100px;
+  padding-bottom: 44px;
+  background-image: url('../img/key-bg.svg');
+  background-repeat: no-repeat;
+  background-position: -120px center;
+  background-size: contain;
+
+  &__title {
+    grid-column: 9 span;
+    font-size: 45px;
+    line-height: 60px;
+    max-width: 70%;
+
+    &-line {
+      background-position: right 86px;
+      background-size: 206px 5px;
+      background-repeat: no-repeat;
+      background-image: url('../img/line.svg');
+    }
+  }
+
+  &__list {
+    margin-top: 65px;
+    gap: 30px;
+  }
+  &__item {
+    grid-column: 3 span;
+    filter: drop-shadow(0px 0px 10px rgba(73, 93, 76, 0.3));
+    transition: all 0.3s ease-in-out;
+    &-img {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 90px;
+      border-radius: 25px 25px 0 0;
+      &-office {
+        background-image: url(../img/key-office.jpg);
+      }
+      &-tc {
+        background-image: url(../img/key-tc.jpg);
+      }
+      &-fitnes {
+        background-image: url(../img/key-fitnes.jpg);
+      }
+      &-pool {
+        background-image: url(../img/key-pool.jpg);
+      }
+      &-townhouse {
+        background-image: url(../img/key-townhouse.jpg);
+      }
+      &-bar {
+        background-image: url(../img/key-bar.jpg);
+      }
+      &-clinic {
+        background-image: url(../img/key-clinic.jpg);
+      }
+      &-spa {
+        background-image: url(../img/key-spa.jpg);
+      }
+    }
+    @include hover {
+      transform: scale(1.1);
+    }
+  }
+  &__link {
+    &-price {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 5px 15px;
+      font-size: 15px;
+      line-height: 18px;
+      color: #495d4c;
+      background-color: #d9fadd;
+      border-radius: 0px 10px 10px 0px;
+    }
+    &-discr {
+      padding: 5px 20px;
+      border-radius: 0 0 25px 25px;
+
+      background-color: #fff;
+
+      color: var(--second-color);
+    }
+  }
+}
