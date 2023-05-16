@@ -6,9 +6,15 @@
 
 // подключения компонентов страницы
 @import './components/header';
-@import './components/btn';
-@import './components/line';
 @import './components/hero';
 @import './components/services';
 @import './components/key';
 @import './components/steps';
+@import './components/coll';
+@import './components/about';
+
+// мелкие подключения компонентов страницы
+@import './components/btn';
+@import './components/focus-visible';
+@import './components/line';
+@import './components/form-field';
