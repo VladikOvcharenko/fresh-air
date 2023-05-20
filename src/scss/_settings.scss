@@ -105,6 +105,12 @@ a {
   outline: none;
 }
 
+.focus-visible {
+  outline: 1px solid var(--hover-color);
+  outline-offset: 6px;
+  border-radius: 20px;
+}
+
 .centered {
   text-align: center;
 }

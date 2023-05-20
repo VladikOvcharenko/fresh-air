@@ -12,9 +12,12 @@
 @import './components/steps';
 @import './components/coll';
 @import './components/about';
+@import './components/comfort';
+@import './components/scheme';
 
 // мелкие подключения компонентов страницы
 @import './components/btn';
-@import './components/focus-visible';
+@import './components/highlight';
+
 @import './components/line';
 @import './components/form-field';

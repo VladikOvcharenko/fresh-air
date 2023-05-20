@@ -1,0 +1,75 @@
+.about {
+  margin-top: 100px;
+
+  &__wrapper {
+    max-width: 531px;
+    width: 100%;
+    grid-column: 6 span;
+    &::before {
+      top: 30px;
+      left: -160px;
+      bottom: 68px;
+      right: 60px;
+    }
+  }
+
+  &__content {
+    padding: 34px 44px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+    border-radius: 50px;
+    position: relative;
+
+    &--logo {
+      background-repeat: no-repeat;
+      background-position: 230px center;
+      background-size: 166px 30px;
+      background-image: url('../img/about-logo.svg');
+    }
+
+    &--title {
+      font-size: 45px;
+      line-height: 65px;
+    }
+
+    &--text {
+      padding-top: 20px;
+      color: var(--gray-color);
+    }
+  }
+
+  &__list {
+    grid-column: 6 span;
+    align-items: center;
+
+    &--item {
+      grid-column: 6 span;
+      &::before {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    &--title {
+      position: relative;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 24px;
+      line-height: 47px;
+      color: var(--second-color);
+      span {
+        font-size: 34px;
+      }
+    }
+
+    &--text {
+      position: relative;
+      margin-bottom: 20px;
+      text-align: center;
+      padding-top: 15px;
+      color: var(--amulet-color);
+    }
+  }
+}
