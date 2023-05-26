@@ -1,0 +1,20 @@
+.page-up {
+  opacity: 0;
+  width: 46px;
+  height: 46px;
+  position: fixed;
+  bottom: 100px;
+  right: 5%;
+  z-index: 30;
+  cursor: pointer;
+  transition: 0.8s all;
+  width: 66px;
+  height: 66px;
+  background-repeat: no-repeat;
+  background-size: 66px 66px;
+  background-image: url(../img/slider-btn.png);
+  transform: rotate(270deg);
+}
+.active {
+  opacity: 1;
+}

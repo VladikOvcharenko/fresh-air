@@ -1,10 +1,14 @@
 .coll {
+  background-color: #d9fadd;
   margin-top: 100px;
   height: 248px;
   align-items: start;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../img/coll-bg.svg');
+  background-image: url('../img/coll-bg-2.svg');
+  &__btn {
+    margin-left: 30px;
+  }
 }
 .coll-form {
   justify-content: flex-start;
@@ -19,8 +23,5 @@
   }
   &__field {
     margin-right: 30px;
-  }
-  &__btn {
-    margin-left: 30px;
   }
 }

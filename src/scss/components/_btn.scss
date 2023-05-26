@@ -21,10 +21,31 @@
   border-radius: 30px;
 }
 
-.btn-border {
+.btn__border-big {
   position: relative;
   display: inline-block;
   padding: 15px;
   background: rgba(120, 192, 129, 0.25);
   border-radius: 40px;
+}
+.btn__border {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background: rgba(120, 192, 129, 0.25);
+  border-radius: 20px;
+}
+
+.slider__btn {
+  width: 46px;
+  height: 46px;
+  background-repeat: no-repeat;
+  background-size: 46px 46px;
+  background-image: url('../img/slider-btn.png');
+  @include hover {
+    background-image: url('../img/slider-btn-hover.png');
+  }
+}
+.slider__prev {
+  transform: rotate(180deg);
 }

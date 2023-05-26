@@ -23,33 +23,40 @@
   />
   <link rel="stylesheet" href="css/vendor.css" />
   <link rel="stylesheet" href="css/main.css" />
+
   <script defer src="js/main.js"></script>
 </head>
 
   <body class="page__body">
     <div class="site-container">
-      <header class="header header--position">
-  <div class="header__container flex">
+      <header class="header header__position">
+  <div id="up" class="header__container flex">
     <a href="#" class="logo">
       <img src="../img/logo.svg" alt="Main Logo" />
     </a>
     <nav class="nav flex" title="Main navigation">
       <ul class="nav__list list-reset flex">
-        <li class="nav__item"><a href="#" class="nav__link">послуги</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">о нас</a></li>
+        <li class="nav__item">
+          <a href="#servises" class="nav__link">послуги</a>
+        </li>
+        <li class="nav__item"><a href="#about" class="nav__link">о нас</a></li>
         <li class="nav__item">
           <a href="#" class="nav__link">користь продукту</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">обладнання</a>
+          <a href="#comfort" class="nav__link">обладнання</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">етапи роботи</a>
+          <a href="#scheme" class="nav__link">етапи роботи</a>
         </li>
-        <li class="nav__item"><a href="#" class="nav__link">відгуки</a></li>
+        <li class="nav__item">
+          <a href="#client" class="nav__link">відгуки</a>
+        </li>
       </ul>
     </nav>
-    <a href="#" class="btn">зв’язатися</a>
+    <span class="header__btn">
+      <a href="#!" class="btn">зв’язатися</a>
+    </span>
   </div>
 </header>
 
@@ -75,13 +82,14 @@
           <p>+38 (000) 000 00 00</p>
         </div>
       </div>
-
-      <a href="#" class="hero__btn btn btn-big">залишити заявку</a>
+      <span class="btn__border-big hero__btn">
+        <a href="#" class="btn btn-big">залишити заявку</a></span
+      >
     </div>
   </div>
 </section>
- <section class="services">
-  <div class="services__content flex">
+ <section id="servises" class="services">
+  <div class="services__content container-right flex">
     <div class="services__info">
       <h2 class="services__title">Надавані</h2>
       <h2 class="services__title services__title--line">Послуги</h2>
@@ -149,81 +157,83 @@
 </section>
 
         <section class="key">
-  <div class="container">
-    <h2 class="key__title key__title-line">
-      Комплексне Рішення З Монтажу Та Вентиляції Під Ключ
-    </h2>
+  <div class="key__container">
+    <div class="container">
+      <h2 class="key__title key__title-line">
+        Комплексне Рішення З Монтажу Та Вентиляції Під Ключ
+      </h2>
 
-    <ul class="key__list list-reset grid">
-      <li class="key__item">
-        <a href="#" class="key__link">
-          <div class="key__item-img key__item-img-office">
-            <p class="key__link-price">від 80 000 UAH</p>
-          </div>
-          <p class="key__link-discr">Квартири та офіси</p>
-        </a>
-      </li>
-      <li class="key__item">
-        <a href="#" class="key__link">
-          <div class="key__item-img key__item-img-tc">
-            <p class="key__link-price">від 80 000 UAH</p>
-          </div>
-          <p class="key__link-discr">Магазина та ТЦ</p>
-        </a>
-      </li>
-      <li class="key__item">
-        <a href="#" class="key__link">
-          <div class="key__item-img key__item-img-fitnes">
-            <p class="key__link-price">від 100 000 UAH</p>
-          </div>
-          <p class="key__link-discr">Фітнес центри</p>
-        </a>
-      </li>
-      <li class="key__item">
-        <a href="#" class="key__link">
-          <div class="key__item-img key__item-img-pool">
-            <p class="key__link-price">від 100 000 UAH</p>
-          </div>
-          <p class="key__link-discr">Басейни</p>
-        </a>
-      </li>
-      <li class="key__item">
-        <a href="#" class="key__link">
-          <div class="key__item-img key__item-img-townhouse">
-            <p class="key__link-price">від 150 000 UAH</p>
-          </div>
-          <p class="key__link-discr">Котеджи та таунхауси</p>
-        </a>
-      </li>
-      <li class="key__item">
-        <a href="#" class="key__link">
-          <div class="key__item-img key__item-img-bar">
-            <p class="key__link-price">від 200 000 UAH</p>
-          </div>
-          <p class="key__link-discr">Ресторани, кафе, бари</p>
-        </a>
-      </li>
-      <li class="key__item">
-        <a href="#" class="key__link">
-          <div class="key__item-img key__item-img-clinic">
-            <p class="key__link-price">від 180 000 UAH</p>
-          </div>
-          <p class="key__link-discr">Стоматології, клініки</p>
-        </a>
-      </li>
-      <li class="key__item">
-        <a href="#" class="key__link">
-          <div class="key__item-img key__item-img-spa">
-            <p class="key__link-price">від 90 000 UAH</p>
-          </div>
-          <p class="key__link-discr">Салони краси</p>
-        </a>
-      </li>
-    </ul>
+      <ul class="key__list list-reset grid">
+        <li class="key__item">
+          <a href="#" class="key__link">
+            <div class="key__item-img key__item-img-office">
+              <p class="key__link-price">від 80 000 UAH</p>
+            </div>
+            <p class="key__link-discr">Квартири та офіси</p>
+          </a>
+        </li>
+        <li class="key__item">
+          <a href="#" class="key__link">
+            <div class="key__item-img key__item-img-tc">
+              <p class="key__link-price">від 80 000 UAH</p>
+            </div>
+            <p class="key__link-discr">Магазина та ТЦ</p>
+          </a>
+        </li>
+        <li class="key__item">
+          <a href="#" class="key__link">
+            <div class="key__item-img key__item-img-fitnes">
+              <p class="key__link-price">від 100 000 UAH</p>
+            </div>
+            <p class="key__link-discr">Фітнес центри</p>
+          </a>
+        </li>
+        <li class="key__item">
+          <a href="#" class="key__link">
+            <div class="key__item-img key__item-img-pool">
+              <p class="key__link-price">від 100 000 UAH</p>
+            </div>
+            <p class="key__link-discr">Басейни</p>
+          </a>
+        </li>
+        <li class="key__item">
+          <a href="#" class="key__link">
+            <div class="key__item-img key__item-img-townhouse">
+              <p class="key__link-price">від 150 000 UAH</p>
+            </div>
+            <p class="key__link-discr">Котеджи та таунхауси</p>
+          </a>
+        </li>
+        <li class="key__item">
+          <a href="#" class="key__link">
+            <div class="key__item-img key__item-img-bar">
+              <p class="key__link-price">від 200 000 UAH</p>
+            </div>
+            <p class="key__link-discr">Ресторани, кафе, бари</p>
+          </a>
+        </li>
+        <li class="key__item">
+          <a href="#" class="key__link">
+            <div class="key__item-img key__item-img-clinic">
+              <p class="key__link-price">від 180 000 UAH</p>
+            </div>
+            <p class="key__link-discr">Стоматології, клініки</p>
+          </a>
+        </li>
+        <li class="key__item">
+          <a href="#" class="key__link">
+            <div class="key__item-img key__item-img-spa">
+              <p class="key__link-price">від 90 000 UAH</p>
+            </div>
+            <p class="key__link-discr">Салони краси</p>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
  <section class="steps">
-  <div class="container">
+  <div class="container steps__container">
     <div class="steps__top grid">
       <div class="steps__top__title">
         <h2 class="top__title--text top__title--line">3 Простих Кроки</h2>
@@ -313,12 +323,14 @@
             placeholder="Номер телефона"
           />
         </div>
-        <button class="coll-form__btn btn">Відправити</button>
+        <span class="coll__btn btn__border">
+          <button class="coll-form__btn btn">Відправити</button>
       </div>
+      <span/>
     </form>
   </div>
 </section>
- <section class="about">
+ <section id="about" class="about">
   <div class="container grid">
     <span class="about__wrapper highlight">
       <div class="about__content">
@@ -375,7 +387,7 @@
   </div>
 </section>
 
-        <section class="comfort">
+        <section id="comfort" class="comfort">
   <div class="comfort__container container grid">
     <div class="comfort__discr">
       <h2 class="comfort__discr--title">
@@ -412,7 +424,7 @@
         Це важливо для тих, хто стежить за своїм здоров’ям і
         здоров’ям своїх близьких.
       </p>
-      <span class="btn-border comfort__btn">
+      <span class="btn__border-big comfort__btn">
         <a class="btn btn-big">заповнити заявку</a></span
       >
     </div>
@@ -452,7 +464,7 @@
     </div>
   </div>
 </section>
- <section class="scheme">
+ <section id="scheme" class="scheme">
   <div class="container">
     <h2 class="scheme__title">Зрозуміла й ефективна схема роботи</h2>
     <div class="scheme__wrapper grid">
@@ -511,10 +523,158 @@
   </div>
 </section>
 
+        <section class="portfolio">
+  <div class="portfolio__container highlight">
+    <div class="portfolio__title container grid">
+      <h2 class="portfolio__title--text">Портфоліо І  Процес Роботи</h2>
+      <p class="portfolio__title--discr">
+        Технічні рішення, прийняті в робочих кресленнях, відповідають
+        вимогам екологічних, санітарно-гігієнічних, протипожежних та інших
+        норм і правил і забезпечують безпечну для життя людей
+        експлуатацію об’єкта в разі дотримання передбачених робочими
+        кресленнями заходів.
+      </p>
+    </div>
+
+    <div class="portfolio__slider container-right">
+      <div class="portfolio__slider--nav flex">
+        <div class="slider__btn slider__prev portfolio__slider-prev"></div>
+        <div class="slider__btn slider__next portfolio__slider-next"></div>
+      </div>
+
+      <div class="swiper portfolio__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide portfolio__swiper--item">
+            <a src="#!" class="portfolio__swiper--link flex">
+              <span class="portfolio__swiper--logo"></span>
+              <div class="portfolio__swiper--discr">
+                <h4 class="portfolio__swiper--title">припливна вентиляція</h4>
+                <p class="portfolio__swiper--text">
+                  Монтаж припливної вентиляції (об’єкт у Прайм Парк)
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide portfolio__swiper--item">
+            <!-- <a src="#!" class="portfolio__swiper--link flex">
+                <span class="portfolio__swiper--logo"></span>
+                <div class="portfolio__swiper--discr">
+                  <h4 class="portfolio__swiper--title">припливна вентиляція</h4>
+                  <p class="portfolio__swiper--text">
+                    Монтаж припливної вентиляції (об&rsquo;єкт у&nbsp;Прайм
+                    Парк)
+                  </p>
+                </div>
+              </a> -->
+          </div>
+          <div class="swiper-slide portfolio__swiper--item">
+            <!-- <a src="#!" class="portfolio__swiper--link flex">
+                <span class="portfolio__swiper--logo"></span>
+                <div class="portfolio__swiper--discr">
+                  <h4 class="portfolio__swiper--title">припливна вентиляція</h4>
+                  <p class="portfolio__swiper--text">
+                    Монтаж припливної вентиляції (об&rsquo;єкт у&nbsp;Прайм
+                    Парк)
+                  </p>
+                </div>
+              </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section id="client" class="client">
+  <div class="client__container container-right flex">
+    <div class="client__discr">
+      <h2 class="client__discr--title">Відомі клієнти</h2>
+      <h2 class="client__discr--title">які нам довірилися</h2>
+      <p class="client__discr--text">
+        Реалізовано проєкти квартир і комерційних приміщень у житлових
+        комплексах від великих забудовників таких як: Level, ФСК,
+        MR груп, ПІК, Самоліт, Гранель, Донстрой, Піонер, Еталон, А101,
+        Sminex, Vesper, Інград, КРОСТ, МІЦ. Ми цінуємо кожного клієнта
+        Pascal Vent і з радістю готові розширювати нашу клієнтську
+        базу.
+      </p>
+    </div>
+    <div class="client__slider">
+      <div class="swiper client__swiper">
+        <div class="swiper-wrapper client__slider--wrapper">
+          <div class="swiper-slide client__slider--item">
+            <img src="../img/client-logo-1.png" alt="" />
+          </div>
+          <div class="swiper-slide client__slider--item">
+            <img src="../img/client-logo-2.png" alt="" />
+          </div>
+          <div class="swiper-slide client__slider--item">
+            <img src="../img/client-logo-1.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="client__slider--nav flex">
+        <div class="slider__btn slider__prev client__prev"></div>
+        <div class="slider__btn client__next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
       </main>
       <footer class="footer">
-  <div class="container"></div>
+  <div class="container footer__container flex">
+    <div class="footer__info">
+      <img  src="../img/logo.svg" alt="Pascal Vent Frash AIR" class="footer__info--logo"/>
+      <p class="footer__info--text">
+        Компанія «Pascal Vent» входить до числа найкращих
+        спеціалізованих організацій, з широким асортиментом товарів
+        і послуг, призначених для систем вентиляції
+        та кондиціонування, що надають високий сервіс і зручність
+        обслуговування нашим клієнтам.
+      </p>
+      <h4 class="footer__info--title">
+        Чисте повітря разом з <span>Pascal Vent</span>
+      </h4>
+    </div>
+    <div class="footer__contacts">
+      <h4 class="footer__contacts--title">Контакти</h4>
+        <ul class="footer__contacts--list list-reset">
+          <li class="footer__contacts--item item-phone">+ 380 XX XXX XX XX</li>
+          <li class="footer__contacts--item item-phone">+ 380 XX XXX XX XX</li>
+          <li class="footer__contacts--item item-email">
+            PascalVent@gmail.com
+          </li>
+          <li class="footer__contacts--item item-time">
+            Пн — Сб: 9:00 — 19:00 <br />Нд: вихідний
+          </li>
+          <li class="footer__contacts--item item-location">Київ, Україна</li>
+        </ul>
+
+    </div>
+    <form class="footer__coll">
+      <h4 class="footer__coll__title">Залиште заявку</h4>
+      <div class="footer__coll--content">
+        <div class="footer__coll--field form-field">
+          <input
+            class="form-field__input"
+            type="text"
+            placeholder="Ваше Ім`я"
+          />
+        </div>
+        <div class="footer__coll--field form-field">
+          <input
+            class="form-field__input"
+            type="tel"
+            placeholder="Номер телефона"
+          />
+        </div>
+        <span class="footer__coll--btn btn__border">
+          <button class="coll-form__btn btn">Відправити</button>
+        </span>
+      <span/>
+    </form>
 </footer>
+ <a href="#up" class="page-up"> </a>
 
     </div>
   </body>

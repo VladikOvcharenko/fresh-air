@@ -2,11 +2,11 @@
   padding-top: 167px;
   margin: 0 auto;
   height: 820px;
+  max-width: 1440px;
   background-image: url('../img/hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
-  background-color: #784040;
 
   &__content {
     grid-column: 6 span;

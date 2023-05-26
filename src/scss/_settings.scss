@@ -37,6 +37,14 @@ h4 {
   color: var(--accent-color);
   font-family: var(--font-title);
 }
+h2 {
+  font-size: 45px;
+  line-height: 60px;
+}
+
+h4 {
+  font-size: 26px;
+}
 
 img {
   height: auto;
@@ -95,12 +103,6 @@ a {
   clip: rect(0 0 0 0);
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
-}
-
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
@@ -136,4 +138,15 @@ a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+}
+.container-right {
+  margin: 0 auto;
+  padding-left: var(--container-offset);
+  max-width: var(--container-width);
 }

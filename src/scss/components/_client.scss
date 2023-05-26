@@ -1,0 +1,56 @@
+.client {
+  &__container {
+    position: absolute;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 156px;
+
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    height: 515px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/client-bg.svg);
+  }
+  &__discr {
+    display: block;
+    max-width: 610px;
+    width: 100%;
+
+    &--text {
+      margin-top: 25px;
+      color: var(--gray-color);
+    }
+  }
+
+  &__slider {
+    position: relative;
+    right: -160px;
+
+    &--item {
+      width: 258px;
+      height: 116px;
+      transition: all 0.3s ease-in-out;
+      img {
+        width: 258px;
+        height: 116px;
+      }
+      @include hover {
+        transform: scale(1.08);
+      }
+    }
+
+    &--nav {
+      justify-content: center;
+      margin-top: 25px;
+      gap: 25px;
+    }
+  }
+  &__wrapper {
+    width: 820px;
+  }
+  &__swiper {
+    width: 820px;
+  }
+}

@@ -1,0 +1,90 @@
+.footer {
+  &__container {
+    padding-top: 86px;
+    padding-bottom: 96px;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../img/footer-bg.svg');
+  }
+
+  &__info {
+    max-width: 406px;
+
+    &--logo {
+      width: 352px;
+      height: 109px;
+    }
+
+    &--text {
+      margin-top: 30px;
+      padding-bottom: 25px;
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--amulet-color);
+      border-bottom: 1px solid var(--second-color);
+    }
+
+    &--title {
+      margin-top: 35px;
+      font-size: 18px;
+      line-height: 24px;
+      span {
+        font-size: 18px;
+        color: var(--second-color);
+      }
+    }
+  }
+
+  &__contacts {
+    margin-top: 30px;
+    &--list {
+      margin-top: 10px;
+    }
+    &--item {
+      padding: 15px 38px;
+      max-width: 242px;
+      width: 100%;
+      color: #7b897d;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+  }
+
+  &__coll {
+    margin-top: 30px;
+
+    &--content {
+      margin-top: 5px;
+    }
+
+    &--field {
+      margin-top: 20px;
+    }
+
+    &--btn {
+      display: inline-block;
+      margin-top: 35px;
+    }
+  }
+}
+
+.item-phone {
+  background-size: 22px 22px;
+  background-image: url('../img/phone-icon.svg');
+  border-bottom: 1px solid var(--second-color);
+}
+.item-email {
+  background-size: 24px 18px;
+  background-image: url('../img/mail-icon.svg');
+  border-bottom: 1px solid var(--second-color);
+}
+.item-time {
+  background-size: 22px 22px;
+  background-image: url('../img/time-icon.svg');
+}
+.item-location {
+  background-size: 24px 31px;
+  background-image: url('../img/map-icon.svg');
+}
