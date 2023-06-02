@@ -1,14 +1,13 @@
 .client {
   &__container {
-    position: absolute;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 156px;
-
+    padding-top: 156px;
+    padding-bottom: 60px;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
-    height: 515px;
+    max-height: 515px;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../img/client-bg.svg);

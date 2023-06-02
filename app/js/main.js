@@ -1,114 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/_components.js":
-/*!*******************************!*\
-  !*** ./src/js/_components.js ***!
-  \*******************************/
-/***/ (() => {
-
-console.log('components');
-
-/***/ }),
-
-/***/ "./src/js/_functions.js":
-/*!******************************!*\
-  !*** ./src/js/_functions.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/mobile-check */ "./src/js/functions/mobile-check.js");
-// Данный файл - лишь собрание подключений готовых компонентов.
-// Рекомендуется создавать отдельный файл в папке components и подключать все там
-
-// Определение операционной системы на мобильных
-
-console.log((0,_functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__.mobileCheck)());
-
-// Определение ширины экрана
-// import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
-// if (isDesktop()) {
-//   console.log('...')
-// }
-
-// Троттлинг функции (для ресайза, ввода в инпут, скролла и т.д.)
-// import { throttle } from './functions/throttle';
-// let yourFunc = () => { console.log('throttle') };
-// let func = throttle(yourFunc);
-// window.addEventListener('resize', func);
-
-// Фикс фулскрин-блоков
-// import './functions/fix-fullheight';
-
-// Реализация бургер-меню
-// import { burger } from './functions/burger';
-
-// Реализация остановки скролла (не забудьте вызвать функцию)
-// import { disableScroll } from './functions/disable-scroll';
-
-// Реализация включения скролла (не забудьте вызвать функцию)
-// import { enableScroll } from './functions/enable-scroll';
-
-// Реализация модального окна
-// import GraphModal from 'graph-modal';
-// const modal = new GraphModal();
-
-// Реализация табов
-// import GraphTabs from 'graph-tabs';
-// const tabs = new GraphTabs('tab');
-
-// Получение высоты шапки сайта (не забудьте вызвать функцию)
-// import { getHeaderHeight } from './functions/header-height';
-
-// Подключение плагина кастом-скролла
-// import 'simplebar';
-
-// Подключение плагина для позиционирования тултипов
-// import { createPopper, right} from '@popperjs/core';
-// createPopper(el, tooltip, {
-//   placement: 'right'
-// });
-
-// Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
-
-// Подключение анимаций по скроллу
-// import AOS from 'aos';
-// AOS.init();
-
-// Подключение параллакса блоков при скролле
-// import Rellax from 'rellax';
-// const rellax = new Rellax('.rellax');
-
-// Подключение плавной прокрутки к якорям
-// import SmoothScroll from 'smooth-scroll';
-// const scroll = new SmoothScroll('a[href*="#"]');
-
-// Подключение событий свайпа на мобильных
-// import 'swiped-events';
-// document.addEventListener('swiped', function(e) {
-//   console.log(e.target);
-//   console.log(e.detail);
-//   console.log(e.detail.dir);
-// });
-
-// import { validateForms } from './functions/validate-forms';
-// const rules1 = [...];
-
-// const afterForm = () => {
-//   console.log('Произошла отправка, тут можно писать любые действия');
-// };
-
-// validateForms('.form-1', rules1, afterForm);
-
-/***/ }),
-
 /***/ "./src/js/_vars.js":
 /*!*************************!*\
   !*** ./src/js/_vars.js ***!
@@ -143,31 +35,199 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js/functions/mobile-check.js":
-/*!******************************************!*\
-  !*** ./src/js/functions/mobile-check.js ***!
-  \******************************************/
+/***/ "./src/js/functions/modal.js":
+/*!***********************************!*\
+  !*** ./src/js/functions/modal.js ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "mobileCheck": () => (/* binding */ mobileCheck)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+// function openModal(triggerSelector, modalSelector, closeSelector) {
+//   const trigger = document.querySelectorAll(triggerSelector)
+//   const modal = document.querySelector(modalSelector)
+//   const close = document.querySelector(closeSelector)
 
-const mobileCheck = () => {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  if (/android/i.test(userAgent)) {
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.classList.add('page--android');
-    return "Android";
+//   trigger.forEach((item) => {
+//     item.addEventListener('click', (e) => {
+//       if (e.target) {
+//         e.preventDefault()
+//       }
+//       modal.classList.add('modal__overlay-visible')
+//       document.body.classList.add('no-scroll')
+//     })
+//   })
+
+//   close.addEventListener('click', () => {
+//     modal.classList.remove('modal__overlay-visible')
+//     document.body.classList.remove('no-scroll')
+//   })
+
+//   modal.addEventListener('click', (e) => {
+//     if (e.target === modal) {
+//       modal.classList.remove('modal__overlay-visible')
+//       document.body.classList.remove('no-scroll')
+//     }
+//   })
+// }
+
+// Заменил имя переменной trigger на triggers, чтобы отразить, что это коллекция элементов.
+
+// Вынес добавление/удаление классов в отдельные функции showModal и hideModal, чтобы улучшить читаемость кода и избежать дублирования кода.
+
+// Создал переменную body, чтобы не обращаться к document.body каждый раз при добавлении/удалении класса.
+
+// Убрал условие if (e.target) внутри обработчика события клика на триггере, так как это условие всегда истинно в данном контексте.
+
+function openModal(triggerSelector, modalSelector, closeSelector) {
+  const triggers = document.querySelectorAll(triggerSelector);
+  const modal = document.querySelector(modalSelector);
+  const closeButtons = document.querySelectorAll(closeSelector);
+  const body = document.body;
+  function showModal() {
+    modal.classList.add('modal__overlay-visible');
+    body.classList.add('no-scroll');
   }
-  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    _vars__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.classList.add('page--ios');
-    return "iOS";
+  function hideModal() {
+    modal.classList.remove('modal__overlay-visible');
+    body.classList.remove('no-scroll');
   }
-  return "unknown";
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', e => {
+      e.preventDefault();
+      showModal();
+    });
+  });
+  closeButtons.forEach(closeButton => {
+    closeButton.addEventListener('click', hideModal);
+  });
+  modal.addEventListener('click', e => {
+    if (e.target === modal) {
+      hideModal();
+    }
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (openModal);
+
+/***/ }),
+
+/***/ "./src/js/functions/scrolling.js":
+/*!***************************************!*\
+  !*** ./src/js/functions/scrolling.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const scrolling = upSelector => {
+  const upElement = document.querySelector(upSelector);
+  window.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop > 1650) {
+      upElement.classList.add('active');
+    } else {
+      upElement.classList.remove('active');
+    }
+  });
+
+  // Scrolling with request animation
+  // плавный скролл по всем ссылкам вниз
+
+  let links = document.querySelectorAll('[href^="#"]'),
+    speed = 0.4;
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      let widthTop = document.documentElement.scrollTop;
+      let hash = this.hash;
+      let toBlock = document.querySelector(hash).getBoundingClientRect().top;
+      let start = null;
+      requestAnimationFrame(step);
+      function step(time) {
+        if (start === null) {
+          start = time;
+        }
+        let progress = time - start;
+        let r = toBlock < 0 ? Math.max(widthTop - progress / speed, widthTop + toBlock) : Math.min(widthTop + progress / speed, widthTop + toBlock);
+        document.documentElement.scrollTo(0, r);
+        if (r != widthTop + toBlock) {
+          requestAnimationFrame(step);
+        } else {
+          location.hash = hash;
+        }
+      }
+    });
+  });
 };
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scrolling);
+
+/***/ }),
+
+/***/ "./src/js/functions/swiper.js":
+/*!************************************!*\
+  !*** ./src/js/functions/swiper.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
+const swiperClient = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.client__swiper', {
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.client__next',
+    prevEl: '.client__prev'
+  }
+
+  // breakpoints: {
+  //   576: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 20,
+  //   },
+  //   770: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30,
+  //   },
+  //   970: {
+  //     slidesPerView: 4,
+  //     spaceBetween: 30,
+  //   },
+  // },
+});
+
+const swiperPartners = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.portfolio__swiper', {
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.portfolio__slider-next',
+    prevEl: '.portfolio__slider-prev'
+  }
+
+  // breakpoints: {
+  //   576: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 20,
+  //   },
+  //   770: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30,
+  //   },
+  //   970: {
+  //     slidesPerView: 4,
+  //     spaceBetween: 30,
+  //   },
+  // },
+});
 
 /***/ }),
 
@@ -13129,111 +13189,21 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_vendor */ "./src/js/_vendor.js");
 /* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_vars */ "./src/js/_vars.js");
-/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var _functions_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./functions/modal */ "./src/js/functions/modal.js");
+/* harmony import */ var _functions_swiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./functions/swiper */ "./src/js/functions/swiper.js");
+/* harmony import */ var _functions_scrolling__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./functions/scrolling */ "./src/js/functions/scrolling.js");
+
+
+// import './_functions'
+// import './_components'
 
 
 
-
-
-swiper__WEBPACK_IMPORTED_MODULE_4__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_4__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_4__.Pagination]);
-const swiperPartners = new swiper__WEBPACK_IMPORTED_MODULE_4__["default"]('.portfolio__swiper', {
-  loop: true,
-  slidesPerView: 'auto',
-  spaceBetween: 30,
-  navigation: {
-    nextEl: '.portfolio__slider-next',
-    prevEl: '.portfolio__slider-prev'
-  }
-
-  // breakpoints: {
-  //   576: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  //   770: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30,
-  //   },
-  //   970: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 30,
-  //   },
-  // },
+window.addEventListener('DOMContentLoaded', () => {
+  (0,_functions_scrolling__WEBPACK_IMPORTED_MODULE_4__["default"])('.page-up');
+  (0,_functions_modal__WEBPACK_IMPORTED_MODULE_2__["default"])('.open-modal', '.modal-info__overlay', '.modal__close-btn');
+  (0,_functions_modal__WEBPACK_IMPORTED_MODULE_2__["default"])('.open-modal-info', '.modal__overlay', '.modal__close-btn');
 });
-
-const swiperClient = new swiper__WEBPACK_IMPORTED_MODULE_4__["default"]('.client__swiper', {
-  loop: true,
-  slidesPerView: 'auto',
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.client__next',
-    prevEl: '.client__prev'
-  }
-
-  // breakpoints: {
-  //   576: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  //   770: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30,
-  //   },
-  //   970: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 30,
-  //   },
-  // },
-});
-
-// const header
-
-// upSelector - класс появляющейся кнопки, передается агрументом при вызове функции (скролл топ)
-
-const scrolling = upSelector => {
-  const upElement = document.querySelector(upSelector);
-  window.addEventListener('scroll', () => {
-    if (document.documentElement.scrollTop > 1650) {
-      console.log(1);
-      upElement.classList.add('active');
-    } else {
-      upElement.classList.remove('active');
-    }
-  });
-
-  // Scrolling with request animation
-  // плавный скролл по всем ссылкам вниз
-
-  let links = document.querySelectorAll('[href^="#"]'),
-    speed = 0.4;
-  links.forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      let widthTop = document.documentElement.scrollTop;
-      let hash = this.hash;
-      let toBlock = document.querySelector(hash).getBoundingClientRect().top;
-      let start = null;
-      requestAnimationFrame(step);
-      function step(time) {
-        if (start === null) {
-          start = time;
-        }
-        let progress = time - start;
-        let r = toBlock < 0 ? Math.max(widthTop - progress / speed, widthTop + toBlock) : Math.min(widthTop + progress / speed, widthTop + toBlock);
-        document.documentElement.scrollTo(0, r);
-        if (r != widthTop + toBlock) {
-          requestAnimationFrame(step);
-        } else {
-          location.hash = hash;
-        }
-      }
-    });
-  });
-};
-scrolling('.page-up');
 })();
 
 /******/ })()

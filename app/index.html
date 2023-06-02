@@ -3,7 +3,7 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#111111" />
   <title>Fresh Air</title>
@@ -55,7 +55,7 @@
       </ul>
     </nav>
     <span class="header__btn">
-      <a href="#!" class="btn">зв’язатися</a>
+      <button class="btn btn-small open-modal">зв’язатися</button>
     </span>
   </div>
 </header>
@@ -82,8 +82,10 @@
           <p>+38 (000) 000 00 00</p>
         </div>
       </div>
-      <span class="btn__border-big hero__btn">
-        <a href="#" class="btn btn-big">залишити заявку</a></span
+      <span class="btn__border--big btn__border hero__btn">
+        <button class="btn btn-big open-modal-info">
+          залишити заявку
+        </button></span
       >
     </div>
   </div>
@@ -157,79 +159,77 @@
 </section>
 
         <section class="key">
-  <div class="key__container">
-    <div class="container">
-      <h2 class="key__title key__title-line">
-        Комплексне Рішення З Монтажу Та Вентиляції Під Ключ
-      </h2>
+  <div class="key__container container">
+    <h2 class="key__title key__title-line">
+      Комплексне Рішення З Монтажу Та Вентиляції Під Ключ
+    </h2>
 
-      <ul class="key__list list-reset grid">
-        <li class="key__item">
-          <a href="#" class="key__link">
-            <div class="key__item-img key__item-img-office">
-              <p class="key__link-price">від 80 000 UAH</p>
-            </div>
-            <p class="key__link-discr">Квартири та офіси</p>
-          </a>
-        </li>
-        <li class="key__item">
-          <a href="#" class="key__link">
-            <div class="key__item-img key__item-img-tc">
-              <p class="key__link-price">від 80 000 UAH</p>
-            </div>
-            <p class="key__link-discr">Магазина та ТЦ</p>
-          </a>
-        </li>
-        <li class="key__item">
-          <a href="#" class="key__link">
-            <div class="key__item-img key__item-img-fitnes">
-              <p class="key__link-price">від 100 000 UAH</p>
-            </div>
-            <p class="key__link-discr">Фітнес центри</p>
-          </a>
-        </li>
-        <li class="key__item">
-          <a href="#" class="key__link">
-            <div class="key__item-img key__item-img-pool">
-              <p class="key__link-price">від 100 000 UAH</p>
-            </div>
-            <p class="key__link-discr">Басейни</p>
-          </a>
-        </li>
-        <li class="key__item">
-          <a href="#" class="key__link">
-            <div class="key__item-img key__item-img-townhouse">
-              <p class="key__link-price">від 150 000 UAH</p>
-            </div>
-            <p class="key__link-discr">Котеджи та таунхауси</p>
-          </a>
-        </li>
-        <li class="key__item">
-          <a href="#" class="key__link">
-            <div class="key__item-img key__item-img-bar">
-              <p class="key__link-price">від 200 000 UAH</p>
-            </div>
-            <p class="key__link-discr">Ресторани, кафе, бари</p>
-          </a>
-        </li>
-        <li class="key__item">
-          <a href="#" class="key__link">
-            <div class="key__item-img key__item-img-clinic">
-              <p class="key__link-price">від 180 000 UAH</p>
-            </div>
-            <p class="key__link-discr">Стоматології, клініки</p>
-          </a>
-        </li>
-        <li class="key__item">
-          <a href="#" class="key__link">
-            <div class="key__item-img key__item-img-spa">
-              <p class="key__link-price">від 90 000 UAH</p>
-            </div>
-            <p class="key__link-discr">Салони краси</p>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul class="key__list list-reset grid">
+      <li class="key__item">
+        <a href="#" class="key__link">
+          <div class="key__item-img key__item-img-office">
+            <p class="key__link-price">від 80 000 UAH</p>
+          </div>
+          <p class="key__link-discr">Квартири та офіси</p>
+        </a>
+      </li>
+      <li class="key__item">
+        <a href="#" class="key__link">
+          <div class="key__item-img key__item-img-tc">
+            <p class="key__link-price">від 80 000 UAH</p>
+          </div>
+          <p class="key__link-discr">Магазина та ТЦ</p>
+        </a>
+      </li>
+      <li class="key__item">
+        <a href="#" class="key__link">
+          <div class="key__item-img key__item-img-fitnes">
+            <p class="key__link-price">від 100 000 UAH</p>
+          </div>
+          <p class="key__link-discr">Фітнес центри</p>
+        </a>
+      </li>
+      <li class="key__item">
+        <a href="#" class="key__link">
+          <div class="key__item-img key__item-img-pool">
+            <p class="key__link-price">від 100 000 UAH</p>
+          </div>
+          <p class="key__link-discr">Басейни</p>
+        </a>
+      </li>
+      <li class="key__item">
+        <a href="#" class="key__link">
+          <div class="key__item-img key__item-img-townhouse">
+            <p class="key__link-price">від 150 000 UAH</p>
+          </div>
+          <p class="key__link-discr">Котеджи та таунхауси</p>
+        </a>
+      </li>
+      <li class="key__item">
+        <a href="#" class="key__link">
+          <div class="key__item-img key__item-img-bar">
+            <p class="key__link-price">від 200 000 UAH</p>
+          </div>
+          <p class="key__link-discr">Ресторани, кафе, бари</p>
+        </a>
+      </li>
+      <li class="key__item">
+        <a href="#" class="key__link">
+          <div class="key__item-img key__item-img-clinic">
+            <p class="key__link-price">від 180 000 UAH</p>
+          </div>
+          <p class="key__link-discr">Стоматології, клініки</p>
+        </a>
+      </li>
+      <li class="key__item">
+        <a href="#" class="key__link">
+          <div class="key__item-img key__item-img-spa">
+            <p class="key__link-price">від 90 000 UAH</p>
+          </div>
+          <p class="key__link-discr">Салони краси</p>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>
  <section class="steps">
@@ -303,7 +303,7 @@
 </section>
 
         <section class="coll">
-  <div class="container flex">
+  <div class="coll__container container flex">
     <form action="#" class="coll-form">
       <h2 class="coll-form__title">
         Залиште заявку і ми з вами зв’яжемося
@@ -311,27 +311,28 @@
       <div class="coll-form__content flex">
         <div class="coll-form__field form-field">
           <input
-            class="form-field__input"
+            class="form-field--input"
             type="text"
             placeholder="Ваше Ім`я"
           />
         </div>
         <div class="coll-form__field form-field">
           <input
-            class="form-field__input"
+            class="form-field--input"
             type="tel"
             placeholder="Номер телефона"
           />
         </div>
-        <span class="coll__btn btn__border">
-          <button class="coll-form__btn btn">Відправити</button>
+
+        <span class="coll__btn btn__border btn__border--light"
+          ><button class="coll-form__btn btn btn-small">Відправити</button>
+        </span>
       </div>
-      <span/>
     </form>
   </div>
 </section>
  <section id="about" class="about">
-  <div class="container grid">
+  <div class="about__container container grid">
     <span class="about__wrapper highlight">
       <div class="about__content">
         <h3 class="about__content--title about__content--logo">Про Нас</h3>
@@ -424,8 +425,10 @@
         Це важливо для тих, хто стежить за своїм здоров’ям і
         здоров’ям своїх близьких.
       </p>
-      <span class="btn__border-big comfort__btn">
-        <a class="btn btn-big">заповнити заявку</a></span
+      <span class="btn__border--big btn__border comfort__btn">
+        <button class="btn btn-big open-modal-info">
+          заповнити заявку
+        </button></span
       >
     </div>
     <div class="comfort__images highlight grid">
@@ -523,68 +526,7 @@
   </div>
 </section>
 
-        <section class="portfolio">
-  <div class="portfolio__container highlight">
-    <div class="portfolio__title container grid">
-      <h2 class="portfolio__title--text">Портфоліо І  Процес Роботи</h2>
-      <p class="portfolio__title--discr">
-        Технічні рішення, прийняті в робочих кресленнях, відповідають
-        вимогам екологічних, санітарно-гігієнічних, протипожежних та інших
-        норм і правил і забезпечують безпечну для життя людей
-        експлуатацію об’єкта в разі дотримання передбачених робочими
-        кресленнями заходів.
-      </p>
-    </div>
-
-    <div class="portfolio__slider container-right">
-      <div class="portfolio__slider--nav flex">
-        <div class="slider__btn slider__prev portfolio__slider-prev"></div>
-        <div class="slider__btn slider__next portfolio__slider-next"></div>
-      </div>
-
-      <div class="swiper portfolio__swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide portfolio__swiper--item">
-            <a src="#!" class="portfolio__swiper--link flex">
-              <span class="portfolio__swiper--logo"></span>
-              <div class="portfolio__swiper--discr">
-                <h4 class="portfolio__swiper--title">припливна вентиляція</h4>
-                <p class="portfolio__swiper--text">
-                  Монтаж припливної вентиляції (об’єкт у Прайм Парк)
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide portfolio__swiper--item">
-            <!-- <a src="#!" class="portfolio__swiper--link flex">
-                <span class="portfolio__swiper--logo"></span>
-                <div class="portfolio__swiper--discr">
-                  <h4 class="portfolio__swiper--title">припливна вентиляція</h4>
-                  <p class="portfolio__swiper--text">
-                    Монтаж припливної вентиляції (об&rsquo;єкт у&nbsp;Прайм
-                    Парк)
-                  </p>
-                </div>
-              </a> -->
-          </div>
-          <div class="swiper-slide portfolio__swiper--item">
-            <!-- <a src="#!" class="portfolio__swiper--link flex">
-                <span class="portfolio__swiper--logo"></span>
-                <div class="portfolio__swiper--discr">
-                  <h4 class="portfolio__swiper--title">припливна вентиляція</h4>
-                  <p class="portfolio__swiper--text">
-                    Монтаж припливної вентиляції (об&rsquo;єкт у&nbsp;Прайм
-                    Парк)
-                  </p>
-                </div>
-              </a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- <section id="client" class="client">
+        <section id="client" class="client">
   <div class="client__container container-right flex">
     <div class="client__discr">
       <h2 class="client__discr--title">Відомі клієнти</h2>
@@ -615,6 +557,71 @@
       <div class="client__slider--nav flex">
         <div class="slider__btn slider__prev client__prev"></div>
         <div class="slider__btn client__next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="modal">
+  <div class="modal__overlay flex">
+    <div class="modal__form flex">
+      <span class="modal__close-btn--border btn__border">
+        <button class="modal__close-btn btn"></button>
+      </span>
+      <div class="modal__form--wrapper flex">
+        <h2 class="modal__form--title">Ми Зв`яжемося З Вами</h2>
+        <form class="modal__form-field flex">
+          <div class="modal__form-field--wrapper form-field">
+            <input
+              class="modal__form-field--input form-field--input"
+              type="text"
+              placeholder="Ваше Ім`я"
+            />
+          </div>
+          <div class="form-field">
+            <input
+              class="modal__form-field--input form-field--input"
+              type="tel"
+              placeholder="Номер телефона"
+            />
+          </div>
+
+          <span class="modal__form--btn btn__border btn__border--light"
+            ><button type="submit" class="btn btn-small">Відправити</button>
+          </span>
+        </form>
+        <img
+          src="../img/logo.svg"
+          alt="Pascal Vent logo"
+          class="modal__logo"
+          width="228"
+          height="68"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-info__overlay modal__overlay flex">
+    <div class="modal-info modal__form flex">
+      <span class="modal__close-btn--border btn__border">
+        <button class="modal__close-btn btn"></button>
+      </span>
+
+      <div class="modal-info__wrapper flex">
+        <h2 class="modal__form--title">Швидкий Зв`язок З Нами</h2>
+        <div class="modal-info--discr">
+          <p class="modal-info--text">
+            Ви можете набрати нам, і менеджери Pascal Vent
+            з радістю проконсультують Вас з будь-якого питання
+            і допоможуть визначитися з вибором.
+          </p>
+          <p class="modal-info--graph">Графік прийому дзвінків:</p>
+          <p class="modal-info--time">ПН-СБ з 9:00 до 19:00</p>
+          <div class="modal-info__phone flex">
+            <p class="modal-info--phone">+38 XXX XXX XX XX</p>
+            <div class="line-border"></div>
+            <p class="modal-info--phone">+38 XXX XXX XX XX</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -656,20 +663,20 @@
       <div class="footer__coll--content">
         <div class="footer__coll--field form-field">
           <input
-            class="form-field__input"
+            class="form-field--input"
             type="text"
             placeholder="Ваше Ім`я"
           />
         </div>
         <div class="footer__coll--field form-field">
           <input
-            class="form-field__input"
+            class="form-field--input"
             type="tel"
             placeholder="Номер телефона"
           />
         </div>
-        <span class="footer__coll--btn btn__border">
-          <button class="coll-form__btn btn">Відправити</button>
+        <span class="footer__coll--btn btn__border btn__border--light">
+          <button class="coll-form__btn btn btn-small">Відправити</button>
         </span>
       <span/>
     </form>
